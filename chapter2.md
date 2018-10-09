@@ -473,8 +473,8 @@ ex() %>% check_function("plot") %>% {
   check_arg(., "ylab")
 }
 ex() %>% check_function("text")
-ex() %>% check_function("abline",index=1) %>% check_arg(., "reg") %>% check_equal()
-ex() %>% check_function("abline",index=2) %>% check_arg(., "reg") %>% check_equal()
+ex() %>% check_function("abline",index=1) %>% check_arg(., "coef") %>% check_equal()
+ex() %>% check_function("abline",index=2) %>% check_arg(., "coef") %>% check_equal()
 ex() %>% check_function("par") %>% check_arg(., "mfrow") %>% check_equal()
 ex() %>% check_function("qqnorm",index=1) %>% check_arg(., "y") %>% check_equal()
 ex() %>% check_function("qqline",index=1) %>% check_arg(., "y") %>% check_equal()
