@@ -69,7 +69,7 @@ pr=pnorm(72,mean=mchild, sd=sdchild)
 
 `@sct`
 ```{r}
-ex() %>% check_object("ht_child") %>% check_equal()
+ex() %>% check_object("ht_child",undefined_msg="Make sure you assign the childrens hight to ht_child") %>% check_equal(incorrect_msg="Remember that in order to call a specific column from a dataframe, use the $ operator")
 ex() %>% check_object("mchild")  %>% check_equal()
 ex() %>% check_object("sdchild") %>% check_equal()
 ex() %>% check_object("pr") %>% check_equal()
