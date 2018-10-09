@@ -41,6 +41,8 @@ No hints for now. No hints for now. No hints for now.
 ```{r}
 Lot <- read.csv("https://assets.datacamp.com/production/repositories/2610/datasets/a792b30fb32b0896dd6894501cbab32b5d48df51/Wisc_lottery.csv", header = TRUE)
 #library(Rcmdr)
+install.packages("psych")
+library(psych)
 ```
 
 `@sample_code`
