@@ -114,7 +114,7 @@ x <- seq(60, 80,by = 0.1)
 ___(x, dnorm(x,mean = mchild, sd = sdchild), col = "blue")
 
 # Determine the probability that a son's height is greater than 60 inches
-1 - pnorm__
+pr=1 - pnorm__
 ```
 
 `@solution`
@@ -122,11 +122,13 @@ ___(x, dnorm(x,mean = mchild, sd = sdchild), col = "blue")
 hist(ht_child, freq = FALSE)
 x <- seq(60, 80,by = 0.1)
 lines(x, dnorm(x,mean = mchild, sd = sdchild), col = "blue")
-1 - pnorm(72, mean = mchild , sd = sdchild)
+pr=1 - pnorm(72, mean = mchild , sd = sdchild)
 ```
 
 `@sct`
 ```{r}
+ex() %>% check_object(hist)
+ex() %>% check_object("pr") %>% check_equal()
 success_msg("Excellent! Visualizing the distribution, especially with reference to a normal, is important for communicating results of your analysis.")
 ```
 
