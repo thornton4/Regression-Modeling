@@ -278,6 +278,12 @@ summary(model_blr2)$r.squared
 
 `@sct`
 ```{r}
+ex() %>% check_object("model_blr1") %>% check_equal()
+ex() %>% check_function("lm") %>% {
+  check_arg(., "function") %>% check_equal()
+  check_arg(., "data") %>% check_equal()
+}
+ex() %>% check_function("anova") %>% check_result() %>% check_equal()
 success_msg("Congratulations! In this exercise, you have seen that rescaling does not affect our measures of goodness of fit in any meaningful way. For example, coeffcient of determinations are completely unaffected. This is helpful because we will rescale variables extensively in our search for patterns in the data.")
 ```
 
