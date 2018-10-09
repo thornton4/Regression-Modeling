@@ -35,7 +35,7 @@ The Galton data has already been read into a dataset called `heights`. These dat
 
 `@hint`
 Remember that we can reference a variable, say `var`, from a data set such as `heights`, as `heights$var`.
-
+hint
 `@pre_exercise_code`
 ```{r}
 heights <- read.csv("https://assets.datacamp.com/production/repositories/2610/datasets/c85ede6c205d22049e766bd08956b225c576255b/galton_height.csv", header = TRUE)
@@ -306,7 +306,7 @@ In the previous exercise, we learned that the Massachusetts bodily injury `claim
 -  Compare the two distributions visually via histograms plotted next to another. `par(mfrow = c(1, 2))` is used to organize the plots you create. Do not alter this code.
 
 `@hint`
-
+No hints for now. No hints for now. No hints for now.
 
 `@pre_exercise_code`
 ```{r}
