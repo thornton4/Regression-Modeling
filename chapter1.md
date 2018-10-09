@@ -55,7 +55,8 @@ sdchild <- ___
 sdchild
 
 #Determine the probability that a child's height is less than 72 inches
-___(72, mean=mchild, sd=sdchild)
+pr=___(72, mean=mchild, sd=sdchild)
+pr
 ```
 
 `@solution`
@@ -68,9 +69,10 @@ pnorm(72,mean=mchild, sd=sdchild)
 
 `@sct`
 ```{r}
-test_error()
-test_object("ht_child", incorrect_msg = "The child's height variable was defined in the wrong way. (You might check the hint.)")
-success_msg("Excellent! With this procedure, you can now calculate probabilities for any distribution using a normal curve approximation.")
+ex() %>% check_object("ht_child") check_equal()
+ex() %>% check_object("mchild") check_equal()
+ex() %>% check_object("sdchild") check_equal()
+ex() %>% check_object("pr") check_equal()
 ```
 
 ---
