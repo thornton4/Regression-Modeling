@@ -350,7 +350,7 @@ ex() %>% check_function("subset")
 ex() %>% check_function("summary") %>% check_arg("object") %>% check_equal()
 ex() %>% check_function("par") %>% check_arg("mfrow") %>% check_equal()
 ex() %>% check_function("hist",index=1) %>% check_arg("x") %>% check_equal()
-ex() %>% check_function("hist",index=2) %>% check_arg("x"0 %>% check_equal()
+ex() %>% check_function("hist",index=2) %>% check_arg("x") %>% check_equal()
 success_msg("Congratulations! The goal of predictive modeling is to discover patterns in the data. However, sometimes seeming 'patterns' are the result of one or two unusual observations. Unusual observations may be due to incorrect data gathering procedures or just due to wild fluctuations in a process of interest but are common in predictive modeling.")
 ```
 
