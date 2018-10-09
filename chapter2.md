@@ -462,5 +462,10 @@ qqline(residuals(model_Kenosha))
 
 `@sct`
 ```{r}
+ex() %>% check_object("model_blr") %>% check_equal()
+ex() %>% check_function("summary",index=1) %>% check_result() %>% check_equal()
+ex() %>% check_object("model_Kenosha") %>% check_equal()
+ex() %>% check_function("summary",index=2) %>% check_arg("x") %>% check_equal()
+
 success_msg("Excellent! Just because an observation is unusual does not make it bad or noninformative. Kenosha is close to the Illinois border; residents from Illinois probably participate in the Wisconsin lottery thus effectively increasing the potential pool of sales in Kenosha. Although unusual, there is interesting information to be learned from this observation.")
 ```
