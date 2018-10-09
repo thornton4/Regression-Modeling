@@ -102,7 +102,7 @@ The prior video analyzed the effect that a zip code's population has on lottery 
 - Use the function [predict()](https://www.rdocumentation.org/packages/stats/versions/3.5.0/topics/predict) and the fitted regression model to predict sales assuming that the median house price for a zip code is 50 (in thousands of dollars).
 
 `@hint`
-
+No hints for now. No hints for now. No hints for now.
 
 `@pre_exercise_code`
 ```{r}
@@ -188,7 +188,7 @@ How reliable is the regression line? In this excercise, you will compute some of
 - Determine the coefficient of determination, $R^2$.
 
 `@hint`
-
+No hints for now. No hints for now. No hints for now.
 
 `@pre_exercise_code`
 ```{r}
@@ -235,7 +235,7 @@ Let us see how rescaling, a linear transformation, affects our measures of uncer
 - For this regression, determine the $s$ and the coefficient of determination, $R^2$.
 
 `@hint`
-
+No hints for now. No hints for now. No hints for now.
 
 `@pre_exercise_code`
 ```{r}
@@ -306,7 +306,7 @@ This exercise will give you practice in the standard inferential tasks: hypothes
 - Consider a zip code with a median housing price equal to 50 (in thousands of dollars). Use the function [predict()](https://www.rdocumentation.org/packages/stats/versions/3.5.0/topics/predict) to provide a point prediction and a 95\% prediction interval for sales.
 
 `@hint`
-
+No hints for now. No hints for now. No hints for now.
 
 `@pre_exercise_code`
 ```{r}
@@ -371,7 +371,7 @@ This exercise summarizes the regression fit both with and without this zip code 
 -  What is the effect on the distribution  of residuals by removing this point? Calculate a qq plot with and without Kenosha.
 
 `@hint`
-
+No hints for now. No hints for now. No hints for now.
 
 `@pre_exercise_code`
 ```{r}
