@@ -257,7 +257,8 @@ ___(claims)
 ___(claims, probs = ___)
 
 #Determine the 25th percentile for claims based on a normal distribution
-___(p = ___, mean = mean(claims), sd = sd(claims))
+pr=___(p = ___, mean = mean(claims), sd = sd(claims))
+pr
 
 #Produce a qq plot for claims
 ___(claims)
@@ -275,6 +276,11 @@ qqline(claims)
 
 `@sct`
 ```{r}
+ex() %>% check_function("boxplot") %>% check_arg("x") %>% check_equal()
+ex() %>% check_function("quantile") $%$ check_arg("probs") %>% check_equal()
+ex() %>% check_object("pr") %>% check_equal()
+ex() %>% check_function("qqnorm") %>% check_arg("y") %>% check_equal()
+ex() %>% check_function("qqline") %>% check_arg("y") %>% check_equal()
 success_msg("Congratulations on learning about box and qq plots. Although you are unlikely to show these plots to consumers of your analysis, you will find them useful tools as we explore multivariate aspects of data.")
 ```
 
