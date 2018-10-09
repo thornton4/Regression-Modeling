@@ -127,8 +127,8 @@ pr=1 - pnorm(72, mean = mchild , sd = sdchild)
 
 `@sct`
 ```{r}
-ex() %>% check_function("hist") %>% check_arg("x") %>% check_equal()
-ex() %>% check_function("lines")
+ex() %>% check_function("hist",not_called_msg="Use the hist command to create a histogram of the children's heights") %>% check_arg("x") %>% check_equal()
+ex() %>% check_function("lines",not_called_msg="Please use the lines function to overlay a normal curve on your histogram")
 ex() %>% check_object("pr") %>% check_equal()
 success_msg("Excellent! Visualizing the distribution, especially with reference to a normal, is important for communicating results of your analysis.")
 ```
