@@ -366,7 +366,7 @@ ex() %>% check_function("lm") %>% {
   check_arg(., "formula") %>% check_equal()
   check_arg(., "data") %>% check_equal()
 }
-ex() %>% check_function(summary) %>% check_result() %>% check_equal()
+ex() %>% check_function("summary") %>% check_result() %>% check_equal()
 ex() %>% check_function("confint") %>% {
   check_arg(., "object") %>% check_equal()
   check_arg(., "level") %>% check_equal()
