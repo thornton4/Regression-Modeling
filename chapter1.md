@@ -315,10 +315,17 @@ claims <- injury$claims
 
 `@sample_code`
 ```{r}
+#View the last 6 entries in injury
 tail(injury)
-injury2 <- subset(injury, claims < 25000 )
-summary(injury2)
+
+#create a subset that excludes the largest claim
+injury2 <- ___(injury, ___ < ___ )
+
+#get summary stats on this new subset
+___(injury2)
 sd(injury2$claim)
+
+#plot both graphs against eachother
 par(mfrow = c(1, 2))
 hist(claims, freq = FALSE,  main = "Full Data")
 hist(injury2$claims, freq = FALSE,  main = "Largest Claim Omitted")
@@ -337,6 +344,11 @@ hist(injury2$claims, freq = FALSE,  main = "Largest Claim Omitted")
 
 `@sct`
 ```{r}
+ex() %>% check_function("tail") %>% check_arg("x") %>% check_equal()
+ex() %>% check_object("injury2") %>% check_equal()
+ex() %>% check_function("subset")
+ex() %>% check_function("par") %>% check_arg("mfrow") %>% check_equal()
+ex() %>% check_function("hist")
 success_msg("Congratulations! The goal of predictive modeling is to discover patterns in the data. However, sometimes seeming 'patterns' are the result of one or two unusual observations. Unusual observations may be due to incorrect data gathering procedures or just due to wild fluctuations in a process of interest but are common in predictive modeling.")
 ```
 
