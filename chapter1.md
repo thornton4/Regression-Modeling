@@ -128,6 +128,7 @@ pr=1 - pnorm(72, mean = mchild , sd = sdchild)
 `@sct`
 ```{r}
 ex() %>% check_function("hist") %>% check_arg("x") %>% check_equal()
+ex() %>% check_function("lines")
 ex() %>% check_object("pr") %>% check_equal()
 success_msg("Excellent! Visualizing the distribution, especially with reference to a normal, is important for communicating results of your analysis.")
 ```
