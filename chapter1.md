@@ -202,7 +202,7 @@ plot(density(logclaims, bw = 0.03))
 ```{r}
 ex() %>% check_object("logclaims") %>% check_equal(incorrect_msg = "You made an error in the definition of the logarithmic claims. Check out the definition of the log() function.")
 ex() %>% check_function("hist")
-ex() %>% check_function("plot") %>% check_arg("x") %>% check_equal(incorrect_msg="Make to plot the density of logclaims")
+ex() %>% check_function("plot") %>% check_arg("x") %>% check_equal(incorrect_msg="Use the density function to overlay a curve on your histogram.")
 ex() %>% check_function("density") %>% check_arg("bw")
 success_msg("Excellent! Visualizing the distribution is important and smoothing techniques allow viewers to see important patterns without being distracted by random fluctations.")
 ```
