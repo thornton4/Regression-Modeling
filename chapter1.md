@@ -64,7 +64,7 @@ pr
 ht_child <- heights$child_ht
 mchild <- mean(ht_child)
 sdchild <- sd(ht_child)
-pnorm(72,mean=mchild, sd=sdchild)
+pr=pnorm(72,mean=mchild, sd=sdchild)
 ```
 
 `@sct`
