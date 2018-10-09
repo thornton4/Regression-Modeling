@@ -133,6 +133,12 @@ predict(model_blr1, newdata)
 
 `@sct`
 ```{r}
+ex() %>% check_function("cor") %>% check_result() %>% check_equal()
+ex() %>% check_function("plot") %>% {
+  check_arg(., "x") %>% check_equal()
+  check_arg(., "y") %>% check_equal()
+}
+ex() %>% check_object(model_blr1) %>% check_equal()
 success_msg("Congratulations! You now have experience fitting a regression line and using this line for predictions, just as Galton did when he used parents' heights to predict the height of an adult child. Well done!")
 ```
 
