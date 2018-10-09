@@ -269,7 +269,7 @@ ___(claims)
 ```{r}
 boxplot(claims)
 quantile(claims, probs = 0.25)
-qnorm(p = 0.25, mean = mean(claims), sd = sd(claims))
+pr=qnorm(p = 0.25, mean = mean(claims), sd = sd(claims))
 qqnorm(claims)
 qqline(claims)
 ```
