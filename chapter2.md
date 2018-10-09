@@ -294,6 +294,7 @@ ex() %>% check_function("lm",index=2) %>% {
 }
 ex() %>% check_function("anova",index=3) %>% check_result() %>% check_equal()
 ex() %>% check_function("sqrt",index=2) %>% check_result() %>% check_equal()
+ex() %>% check_function("anova",index=4) %>% check_result() %>% check_equal()
 ex() %>% check_function("summary",index=2) %>% check_result() %>% check_equal()
 success_msg("Congratulations! In this exercise, you have seen that rescaling does not affect our measures of goodness of fit in any meaningful way. For example, coeffcient of determinations are completely unaffected. This is helpful because we will rescale variables extensively in our search for patterns in the data.")
 ```
