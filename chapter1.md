@@ -276,11 +276,11 @@ qqline(claims)
 
 `@sct`
 ```{r}
-ex() %>% check_function("boxplot") %>% check_arg("x") %>% check_equal()
-ex() %>% check_function("quantile") $%$ check_arg("probs") %>% check_equal()
-ex() %>% check_object("pr") %>% check_equal()
-ex() %>% check_function("qqnorm") %>% check_arg("y") %>% check_equal()
-ex() %>% check_function("qqline") %>% check_arg("y") %>% check_equal()
+ex() %>% check_function("boxplot",not_called_msg="J.D.E.M.") %>% check_arg("x",arg_not_specified_msg="J.D.E.M.") %>% check_equal(incorrect_msg="J.D.E.M.")
+ex() %>% check_function("quantile",not_called_msg="J.D.E.M.") %>% check_arg("probs",arg_not_specified_msg="J.D.E.M.") %>% check_equal(incorrect_msg="J.D.E.M.")
+ex() %>% check_object("pr",undefined_msg="J.D.E.M.") %>% check_equal(incorrect_msg="J.D.E.M.")
+ex() %>% check_function("qqnorm",not_called_msg="J.D.E.M.") %>% check_arg("y",arg_not_specified_msg="J.D.E.M.") %>% check_equal(incorrect_msg="J.D.E.M.")
+ex() %>% check_function("qqline",not_called_msg="J.D.E.M.") %>% check_arg("y",arg_not_specified_msg="J.D.E.M.") %>% check_equal(incorrect_msg="J.D.E.M.")
 success_msg("Congratulations on learning about box and qq plots. Although you are unlikely to show these plots to consumers of your analysis, you will find them useful tools as we explore multivariate aspects of data.")
 ```
 
