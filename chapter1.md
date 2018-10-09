@@ -69,10 +69,11 @@ pnorm(72,mean=mchild, sd=sdchild)
 
 `@sct`
 ```{r}
-ex() %>% check_object("ht_child") check_equal()
-ex() %>% check_object("mchild") check_equal()
-ex() %>% check_object("sdchild") check_equal()
-ex() %>% check_object("pr") check_equal()
+ex() %>% check_object("ht_child") %>% check_equal()
+ex() %>% check_object("mchild")  %>% check_equal()
+ex() %>% check_object("sdchild") %>% check_equal()
+ex() %>% check_object("pr") %>% check_equal()
+success_msg("Excellent! With this procedure, you can now calculate probabilities for any distribution using a normal curve approximation.")
 ```
 
 ---
