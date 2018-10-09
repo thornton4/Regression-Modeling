@@ -316,7 +316,7 @@ claims <- injury$claims
 `@sample_code`
 ```{r}
 #View the last 6 entries in injury
-tail(injury)
+___(injury)
 
 #create a subset that excludes the largest claim
 injury2 <- ___(injury, ___ < ___ )
