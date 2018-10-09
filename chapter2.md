@@ -361,6 +361,7 @@ predict(model_blr1, NewData1, interval = "prediction", level = .95)
 
 `@sct`
 ```{r}
+
 success_msg("Congratulations! Much of what we learn from a data modeling exercise can be summarized using standard inferential tools: hypothesis testing, confidence intervals, and prediction.")
 ```
 
