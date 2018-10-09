@@ -43,15 +43,15 @@ library(psych)
 
 `@sample_code`
 ```{r}
-Lot$pop_1000 <- ___/1000
-Lot$sales_1000 <- ___
+pop_1000 <- ___/1000
+sales_1000 <- ___
 (as.data.frame(psych::describe(Lot)))[,c(2,3,4,5,8,9)]
 ```
 
 `@solution`
 ```{r}
-Lot$pop_1000 <- Lot$pop/1000
-Lot$sales_1000 <- Lot$sales/1000
+pop_1000 <- Lot$pop/1000
+sales_1000 <- Lot$sales/1000
 #numSummary(Lot[,c("pop_1000", "sales_1000")], statistics = c("mean", "sd", "quantiles"), quantiles = c(0,.5,1))
 (as.data.frame(psych::describe(Lot)))[,c(2,3,4,5,8,9)]
 plot(Lot$pop_1000, Lot$sales_1000)
@@ -60,6 +60,8 @@ cor(Lot$pop_1000, Lot$sales_1000)
 
 `@sct`
 ```{r}
+ex() %>% check_object("pop_1000") %>% check_equal()
+ex() %>% check_object("sales_1000") %>% check_equal()
 success_msg("Congratulations! We will rescale data using 'linear' transformations regularly. In part we do this for communicating our analysis to others. Also in part, this is for our own convenience as it can allow us to see patterns more readily.")
 ```
 
