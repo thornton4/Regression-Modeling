@@ -114,7 +114,7 @@ x <- seq(60, 80,by = 0.1)
 ___(x, dnorm(x,mean = mchild, sd = sdchild), col = "blue")
 
 # Determine the probability that a son's height is greater than 72 inches
-pr=1 - pnorm__
+pr=pnorm__
 ```
 
 `@solution`
@@ -122,12 +122,12 @@ pr=1 - pnorm__
 hist(ht_child, freq = FALSE)
 x <- seq(60, 80,by = 0.1)
 lines(x, dnorm(x,mean = mchild, sd = sdchild), col = "blue")
-pr=1 - pnorm(72, mean = mchild , sd = sdchild)
+pr=pnorm(72, mean = mchild , sd = sdchild,lower.tail=FALSE)
 ```
 
 `@sct`
 ```{r}
-ex() %>% check_function("hist",not_called_msg="Use the hist command to create a histogram of the children's heights") %>% check_arg("x") %>% check_equal()
+ex() %>% check_function("hist",not_called_msg="Use the hist command to create a histogram of the children's heights.") %>% check_arg("x") %>% check_equal(incorrect_msg="Make sure to create a histogram of the children's heights.")
 ex() %>% check_function("lines",not_called_msg="Please use the lines function to overlay a normal curve on your histogram")
 ex() %>% check_object("pr") %>% check_equal()
 success_msg("Excellent! Visualizing the distribution, especially with reference to a normal, is important for communicating results of your analysis.")
