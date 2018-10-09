@@ -213,6 +213,14 @@ summary(model_blr)$r.squared
 
 `@sct`
 ```{r}
+ex() %>% check_object("model_blr") %>% check_equal()
+ex() %>% check_function("lm") %>% {
+  check_arg(., "formula") %>% check_equal()
+  check_arg(., "data") %>% check_equal()
+}
+ex() %>% check_function("anova") %>% check_arg("object") %>% check_equal()
+ex() %>% check_function("sqrt") %>% check_result() %>% check_equal()
+ex() %>% check_function("summary") %>% check_result() %>% check_equal()
 success_msg("Congratulations! It will be helpful if you compare the results of this exercise to the regression of `pop` on `sales` from the prior video. We have seen that `pop` is more highly correlated with `sales` than `medhome`, so we are expecting greater uncertainty in this regression fit.")
 ```
 
