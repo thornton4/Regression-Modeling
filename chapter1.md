@@ -91,7 +91,7 @@ As in the prior exercise, from the Galton dataset `heights`, the heights of 928 
 `@instructions`
 -  To visualize the distribution, use the function [hist()](https://www.rdocumentation.org/packages/graphics/versions/3.5.0/topics/hist/) to calculate the histogram. Use the `freq = FALSE` option to give a histogram with proportions instead of counts.
 -  Use the function [seq()](https://www.rdocumentation.org/packages/base/versions/3.5.0/topics/seq) to determine a sequence that can be used for plotting. Then, function [lines()](https://www.rdocumentation.org/packages/graphics/versions/3.5.0/topics/lines/) to superimpose a normal curve on the histogram.
--  Determine the probability that a son's height is greater than 60 inches.
+-  Determine the probability that a son's height is greater than 72 inches.
 
 `@hint`
 No hints for now. No hints for now. No hints for now.
@@ -113,7 +113,7 @@ ___(___, freq = FALSE)
 x <- seq(60, 80,by = 0.1)
 ___(x, dnorm(x,mean = mchild, sd = sdchild), col = "blue")
 
-# Determine the probability that a son's height is greater than 60 inches
+# Determine the probability that a son's height is greater than 72 inches
 pr=1 - pnorm__
 ```
 
