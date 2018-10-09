@@ -65,8 +65,8 @@ cor(Lot$pop_1000, Lot$sales_1000)
 ex() %>% check_object("Lot") %>% check_column("pop_1000") %>% check_equal()
 ex() %>% check_object("Lot") %>% check_column("sales_1000") %>% check_equal()
 ex() %>% check_function("plot") %>% {
-  check_arg("x") %>% check_equal()
-  check_arg("y") %>% check_equal()
+  check_arg(.,"x") %>% check_equal()
+  check_arg(.,"y") %>% check_equal()
 }
 ex() %>% check_function("cor") %>% check_equal()
 success_msg("Congratulations! We will rescale data using 'linear' transformations regularly. In part we do this for communicating our analysis to others. Also in part, this is for our own convenience as it can allow us to see patterns more readily.")
