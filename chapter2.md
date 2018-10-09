@@ -141,7 +141,7 @@ ex() %>% check_function("plot") %>% {
 ex() %>% check_object("model_blr1") %>% check_equal()
 ex() %>% check_function("lm") %>% {
   check_arg(., "formula") %>% check_equal()
-  check_arg(.,"data") %>% check_equal()
+  check_arg(., "data") %>% check_equal()
 }
 success_msg("Congratulations! You now have experience fitting a regression line and using this line for predictions, just as Galton did when he used parents' heights to predict the height of an adult child. Well done!")
 ```
