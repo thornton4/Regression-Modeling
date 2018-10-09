@@ -285,6 +285,7 @@ ex() %>% check_function("lm",index=1) %>% {
 }
 ex() %>% check_function("anova",index=1) %>% check_result() %>% check_equal()
 ex() %>% check_function("sqrt",index=1) %>% check_result() %>% check_equal()
+ex() %>% check_function("anova",index=2) %>% check_result() %>% check_equal()
 ex() %>% check_function("summary",index=1) %>% check_result() %>% check_equal()
 ex() %>% check_object("model_blr2") %>% check_equal()
 ex() %>% check_function("lm",index=2) %>% {
