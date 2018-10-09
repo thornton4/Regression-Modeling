@@ -52,8 +52,8 @@ Lot$sales_1000 <- ___/1000
 
 `@solution`
 ```{r}
-pop_1000 <- Lot$pop/1000
-sales_1000 <- Lot$sales/1000
+lot$pop_1000 <- Lot$pop/1000
+lot$sales_1000 <- Lot$sales/1000
 #numSummary(Lot[,c("pop_1000", "sales_1000")], statistics = c("mean", "sd", "quantiles"), quantiles = c(0,.5,1))
 #(as.data.frame(psych::describe(Lot)))[,c(2,3,4,5,8,9)]
 plot(Lot$pop_1000, Lot$sales_1000)
