@@ -205,7 +205,7 @@ ex() %>% check_function("hist")
 ex() %>% check_function("plot", index = 1) %>% check_arg("x") %>% check_equal(incorrect_msg="Use the density function to plot the density of logclaims.")
 ex() %>% check_function("plot", index=2) %>% {
   check_arg(.,"x") %>% check_equal()
-  check_arg(.,"bw")
+  check_arg(.,"bw",arg_not_specified_msg="please work")
   }
 success_msg("Excellent! Visualizing the distribution is important and smoothing techniques allow viewers to see important patterns without being distracted by random fluctations.")
 ```
