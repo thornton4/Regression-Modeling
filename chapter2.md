@@ -431,8 +431,8 @@ summary(model_Kenosha)
 
 plot(Lot$pop, Lot$sales, xlab = "population", ylab = "sales")
 text(5000, 24000, "Kenosha")
-abline(model_blr, col="blue")
-abline(model_Kenosha, col="red")
+abline(reg=model_blr, col="blue")
+abline(reg=model_Kenosha, col="red")
 
 par(mfrow = c(1, 2))
 qqnorm(residuals(model_blr), main = "")
@@ -450,8 +450,8 @@ summary(model_Kenosha)
 
 plot(Lot$pop, Lot$sales, xlab = "population", ylab = "sales")
 text(5000, 24000, "Kenosha")
-abline(model_blr, col="blue")
-abline(model_Kenosha, col="red")
+abline(reg=model_blr, col="blue")
+abline(reg=model_Kenosha, col="red")
 
 par(mfrow = c(1, 2))
 qqnorm(residuals(model_blr), main = "")
