@@ -143,6 +143,15 @@ ex() %>% check_function("lm") %>% {
   check_arg(., "formula") %>% check_equal()
   check_arg(., "data") %>% check_equal()
 }
+ex() %>% check_function("round") %>% {
+  check_arg(., "x") %>% check_equal()
+  check_arg(., "digits") %>% check_equal()
+}
+ex() %>% check_object("newdata") %>% check_equal()
+ex() %>% check_function("predict") %>% {
+  check_arg(., "object") %>% check_equal()
+  check_arg(., "newdata") %>% check_equal()
+}
 success_msg("Congratulations! You now have experience fitting a regression line and using this line for predictions, just as Galton did when he used parents' heights to predict the height of an adult child. Well done!")
 ```
 
