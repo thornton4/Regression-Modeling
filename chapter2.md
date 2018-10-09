@@ -361,8 +361,8 @@ predict(model_blr1, NewData1, interval = "prediction", level = .95)
 
 `@sct`
 ```{r}
-ex() check_object("model_blr1") %>% check_equal()
-ex() check_function("lm") %>% {
+ex() %>% check_object("model_blr1") %>% check_equal()
+ex() %>% check_function("lm") %>% {
   check_arg(., "formula") %>% check_equal()
   check_arg(., "data") %>% check_equal()
 }
