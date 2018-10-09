@@ -280,7 +280,7 @@ summary(model_blr2)$r.squared
 ```{r}
 ex() %>% check_object("model_blr1") %>% check_equal()
 ex() %>% check_function("lm",index=1) %>% {
-  check_arg(., "function") %>% check_equal()
+  check_arg(., "formula") %>% check_equal()
   check_arg(., "data") %>% check_equal()
 }
 ex() %>% check_function("anova",index=1) %>% check_result() %>% check_equal()
@@ -288,7 +288,7 @@ ex() %>% check_function("sqrt",index=1) %>% check_result() %>% check_equal()
 ex() %>% check_function("summary",index=1) %>% check_result() %>% check_equal()
 ex() %>% check_object("model_blr2") %>% check_equal()
 ex() %>% check_function("lm",index=2) %>% {
-  check_arg(., "function") %>% check_equal()
+  check_arg(., "formula") %>% check_equal()
   check_arg(., "data") %>% check_equal()
 }
 ex() %>% check_function("anova",index=2) %>% check_result() %>% check_equal()
