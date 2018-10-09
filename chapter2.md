@@ -465,7 +465,7 @@ qqline(residuals(model_Kenosha))
 ex() %>% check_object("model_blr") %>% check_equal()
 ex() %>% check_function("summary",index=1) %>% check_result() %>% check_equal()
 ex() %>% check_object("model_Kenosha") %>% check_equal()
-ex() %>% check_function("summary",index=2) %>% check_arg("x") %>% check_equal()
+ex() %>% check_function("summary",index=2) %>% check_arg("object") %>% check_equal()
 ex() %>% check_function("plot") %>% {
   check_arg(., "x") %>% check_equal()
   check_arg(., "y") %>% check_equal()
