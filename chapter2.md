@@ -35,14 +35,14 @@ Like insurance, lotteries are uncertain events and so the skills to work with an
 - Calculate the correlation between `pop_1000` versus `sales_1000` using the function [cor()](https://www.rdocumentation.org/packages/stats/versions/3.5.0/topics/cor). How does this differ between the correlation between population and sales in the original units?
 
 `@hint`
-
+No hints for now. No hints for now. No hints for now.
 
 `@pre_exercise_code`
 ```{r}
 Lot <- read.csv("https://assets.datacamp.com/production/repositories/2610/datasets/a792b30fb32b0896dd6894501cbab32b5d48df51/Wisc_lottery.csv", header = TRUE)
 #library(Rcmdr)
-install.packages("psych")
-library("psych")
+#install.packages("psych")
+#library("psych")
 ```
 
 `@sample_code`
