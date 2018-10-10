@@ -91,7 +91,8 @@ ex() %>% check_function("round") %>% {
   check_arg(., "digits") %>% check_equal()
 }
 ex() %>% check_object("model_mlr1") %>% check_euqal(eq_condition="identical")
-
+ex() %>% check_object("newdata") %>% check_equal(eq_condition="identical")
+ex() %>% check_function("exp") %>% check_result() %>% check_equal()
 success_msg("Excellent! You now have experience fitting a regression plane and using this plane for predictions, extending what Galton did when he used parents' heights to predict the height of an adult child. Well done!")
 ```
 
