@@ -84,7 +84,7 @@ exp(predict(model_mlr1, newdata))
 
 `@sct`
 ```{r}
-ex() %>% check_object("Term") %>% check_column("education1") %>% check_equal()
+ex() %>% check_object("Term2") %>% check_column("education1") %>% check_equal()
 ex() %>% check_function("summary") %>% check_arg("object") %>% check_equal()
 ex() %>% check_function("round") %>% {
   check_arg(., "x") %>% check_equal()
