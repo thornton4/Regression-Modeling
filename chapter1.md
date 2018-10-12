@@ -3,19 +3,6 @@ title: 'Chapter 1. Regression and the Normal Distribution'
 description: 'Regression analysis is a statistical method that is widely used in many fields of study, with actuarial science being no exception. This chapter introduces the role of the normal distribution in regression and the use of logarithmic transformations in specifying regression relationships.'
 ---
 
-## Fitting a normal distribution
-
-```yaml
-type: VideoExercise
-key: cc4b0289d5
-xp: 50
-```
-
-`@projector_key`
-02abc0a8a3727420f7c6f719ae15a203
-
----
-
 ## Fitting Galton's height data
 
 ```yaml
@@ -136,19 +123,6 @@ success_msg("Excellent! Visualizing the distribution, especially with reference 
 
 ---
 
-## Visualizing distributions
-
-```yaml
-type: VideoExercise
-key: a6c75bd534
-xp: 50
-```
-
-`@projector_key`
-eb65055761c45534183ae2de06b6d265
-
----
-
 ## Visualizing injury claims with density plots
 
 ```yaml
@@ -207,19 +181,6 @@ ex() %>% check_function("plot",index=1) %>% check_arg("x") %>% check_equal(incor
 ex() %>% check_function("plot",index=2) %>% check_arg("x") %>% check_equal()
 success_msg("Excellent! Visualizing the distribution is important and smoothing techniques allow viewers to see important patterns without being distracted by random fluctations.")
 ```
-
----
-
-## Summarizing distributions
-
-```yaml
-type: VideoExercise
-key: 210f239af2
-xp: 50
-```
-
-`@projector_key`
-548a52c0975ffc2c8719c26dc5a1d00a
 
 ---
 
@@ -358,16 +319,46 @@ success_msg("Congratulations! The goal of predictive modeling is to discover pat
 
 ---
 
-## Transformations
+## Course Introduction
 
 ```yaml
-type: VideoExercise
-key: 6efae24831
-xp: 50
+type: NormalExercise
+key: 0f2abcda87
+xp: 100
 ```
 
-`@projector_key`
-470199e6243748dfac8891486e37b372
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1660902/sp/166090200/embedIframeJs/uiconf_id/25916071/partner_id/1660902?iframeembed=true&playerId=kaltura_player&entry_id=0_bj34urmj&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_tp96kyab" width="649" height="401" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
+
+
+`@instructions`
+In this exercise, you learn how to:
+
+-    Calculate and interpret two basic summary statistics
+-    Fit a data set to a normal curve
+-    Calculate probabilities under a standard normal curve
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
+```
 
 ---
 
@@ -432,16 +423,3 @@ ex() %>% check_function("plot",index=3,not_called_msg="Did you plot the density 
 ex() %>% check_function("plot",index=4,not_called_msg="Did you plot the density of the negative reciprocal of claims?") %>% check_arg("x") %>% check_equal()
 success_msg("Excellent! Transformations of data is a tool that incredibly expands potential applicability of (linear) regression techniques.")
 ```
-
----
-
-## Course Introduction
-
-```yaml
-type: VideoExercise
-key: b4bf7c0b88
-xp: 50
-```
-
-`@projector_key`
-a08e02c39c2c57e4efa5cad532a3dae1
