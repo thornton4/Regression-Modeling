@@ -3,19 +3,6 @@ title: 'Chapter 2. Basic Linear Regression'
 description: 'This chapter considers regression in the case of only one explanatory variable. Despite this seeming simplicity, many deep ideas of regression can be developed in this framework. By limiting ourselves to the one variable case, we can illustrate the relationships between two variables graphically. Graphical tools prove to be important for developing a link between the data and a predictive model.'
 ---
 
-## Correlation
-
-```yaml
-type: VideoExercise
-key: 5e5beff472
-xp: 50
-```
-
-`@projector_key`
-98aeb5a5bd795a7c8716aba8e177decb
-
----
-
 ## Correlations and the Wisconsin lottery
 
 ```yaml
@@ -481,4 +468,45 @@ ex() %>% check_function("qqline",index=1) %>% check_arg(., "y") %>% check_equal(
 ex() %>% check_function("qqnorm",index=2) %>% check_arg(., "y") %>% check_equal()
 ex() %>% check_function("qqline",index=2) %>% check_arg(., "y") %>% check_equal()
 success_msg("Excellent! Just because an observation is unusual does not make it bad or noninformative. Kenosha is close to the Illinois border; residents from Illinois probably participate in the Wisconsin lottery thus effectively increasing the potential pool of sales in Kenosha. Although unusual, there is interesting information to be learned from this observation.")
+```
+
+---
+
+## Correlation
+
+```yaml
+type: NormalExercise
+key: a83ceb1fad
+xp: 100
+```
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1660902/sp/166090200/embedIframeJs/uiconf_id/25916071/partner_id/1660902?iframeembed=true&playerId=kaltura_player&entry_id=1_qlpe86qi&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=1_w18zht77" width="649" height="401" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
+
+`@instructions`
+In this module, you learn how to:
+
+- Calculate and interpret a correlation coefficient
+- Interpret correlation coefficients by visualizing scatter plots
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
 ```
