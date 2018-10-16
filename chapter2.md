@@ -541,19 +541,6 @@ In this module, you learn how to:
 
 ---
 
-## Diagnostics
-
-```yaml
-type: VideoExercise
-key: 62746a09aa
-xp: 50
-```
-
-`@projector_key`
-5a57a76dab158361957acfdc662c35ea
-
----
-
 ## Assessing outliers in lottery sales
 
 ```yaml
