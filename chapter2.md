@@ -429,19 +429,6 @@ In this module, you learn how to:
 
 ---
 
-## Statistical inference
-
-```yaml
-type: VideoExercise
-key: 4e5ae2cad6
-xp: 50
-```
-
-`@projector_key`
-d2a8a48c0938cd9168aa1467e9d1cef0
-
----
-
 ## Statistical inference and Wisconsin lottery
 
 ```yaml
@@ -508,6 +495,48 @@ ex() %>% check_function("predict") %>% {
 }
 ex() %>% check_function("predict") %>% check_result() %>% check_equal()
 success_msg("Congratulations! Much of what we learn from a data modeling exercise can be summarized using standard inferential tools: hypothesis testing, confidence intervals, and prediction.")
+```
+
+---
+
+## Diagnostics
+
+```yaml
+type: NormalExercise
+key: 3ae81a2fb8
+xp: 100
+```
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1660902/sp/166090200/embedIframeJs/uiconf_id/25916071/partner_id/1660902?iframeembed=true&playerId=kaltura_player&entry_id=0_c6l4p07j&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=1_4rvf8rp1" width="649" height="401" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
+
+
+`@instructions`
+In this module, you learn how to:
+
+- Describe how diagnostic checking and residual analysis are used in a statistical analysis
+- Describe several model misspecifications commonly encountered in a regression analysis
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
 ```
 
 ---
