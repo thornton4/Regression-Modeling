@@ -205,6 +205,11 @@ pchange_fits1
 
 `@sct`
 ```{r}
+ex() %>% check_object("educ_predict") %>% check_equal()
+ex() %>% check_object("newdata1") %>% check_equal()
+ex() %>% check_object("lsfits1") %>% check_equal()
+ex() %>% check_function("predict")
+ex() %>% check_object("pchange_fits1") %>% check_equal()
 success_msg("Congratulations! From calculus, small changes in logarithmic values can be interpreted as proportional changes. This is the reason for using natural logarithms.")
 ```
 
