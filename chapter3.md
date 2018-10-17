@@ -408,19 +408,6 @@ In this module, you learn how to:
 
 ---
 
-## Binary variables
-
-```yaml
-type: VideoExercise
-key: ff359ef406
-xp: 50
-```
-
-`@projector_key`
-a27f0e9bfd20f2e7d3c30b25a5acb7a8
-
----
-
 ## Binary variables and term life
 
 ```yaml
@@ -475,13 +462,43 @@ success_msg("Excellent! From a correlation table, you saw that there are relatio
 ## Categorical variables
 
 ```yaml
-type: VideoExercise
-key: ec71e48d7d
-xp: 50
+type: NormalExercise
+key: 3a2992834d
+xp: 100
 ```
 
-`@projector_key`
-a96ac5c8eed3af533c4c8897c2b57542
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1660902/sp/166090200/embedIframeJs/uiconf_id/25916071/partner_id/1660902?iframeembed=true&playerId=kaltura_player&entry_id=0_gkywbwai&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=1_n73q1ka4" width="649" height="401" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
+
+`@instructions`
+In this module, you learn how to:
+  
+- Represent categorical variables using a set of binary variables
+- Interpret the regression coefficients associated with categorical variables
+- Describe the effect of the reference level choice on the model fit
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
+```
 
 ---
 
