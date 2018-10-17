@@ -405,8 +405,8 @@ qqline(claims)
 ex() %>% check_function("boxplot") %>% check_arg("x") %>% check_equal(incorrect_msg="Please create a boxplot of `claims`.")
 ex() %>% check_function("quantile") %>% check_arg("probs") %>% check_equal(incorrect_msg="If we want to find the Yth percentile, make sure to set probs equal to Y in decimal format.")
 ex() %>% check_object("pct.25",undefined_msg="Make sure to assign the normal value associated with the 25th percentile to pct.25") %>% check_equal(incorrect_msg="J.D.E.M.")
-ex() %>% check_function("qqnorm",not_called_msg="J.D.E.M.") %>% check_arg("y",arg_not_specified_msg="J.D.E.M.") %>% check_equal(incorrect_msg="J.D.E.M.")
-ex() %>% check_function("qqline",not_called_msg="J.D.E.M.") %>% check_arg("y",arg_not_specified_msg="J.D.E.M.") %>% check_equal(incorrect_msg="J.D.E.M.")
+ex() %>% check_function("qqnorm") %>% check_arg("y") %>% check_equal(incorrect_msg="Make sure that you are creating a qq-plot for `claims`.")
+ex() %>% check_function("qqline") %>% check_arg("y") %>% check_equal(incorrect_msg="Make sure that you are adding a qq-line for `claims`.")
 success_msg("Congratulations on learning about box and qq plots. Although you are unlikely to show these plots to consumers of your analysis, you will find them useful tools as we explore multivariate aspects of data.")
 ```
 
