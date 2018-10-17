@@ -583,7 +583,7 @@ plot(density(-claims^(-1)))
 
 `@sct`
 ```{r}
-ex() %>% check_function("par") %>% check_arg("mfrow") %>% check_equal()
+ex() %>% check_function("par") %>% check_arg("mfrow") %>% check_equal("Please do not change this part of the code. It should read `par(mfrow=c(2,2))`")
 ex() %>% check_function("plot",index=1,not_called_msg="Did you plot the density of claims?") %>% check_arg("x") %>% check_equal()
 ex() %>% check_function("plot",index=2,not_called_msg="Did you plot the density of the square root of claims?") %>% check_arg("x") %>% check_equal()
 ex() %>% check_function("plot",index=3,not_called_msg="Did you plot the density of logarithmic claims?") %>% check_arg("x") %>% check_equal()
