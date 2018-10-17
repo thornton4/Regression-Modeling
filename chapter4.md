@@ -407,19 +407,6 @@ In this module, you learn how to:
 
 ---
 
-## Unusual observations
-
-```yaml
-type: VideoExercise
-key: f26dac9523
-xp: 50
-```
-
-`@projector_key`
-3958fa9f4bc063310c17d368a7ad400d
-
----
-
 ## Outlier example
 
 ```yaml
@@ -534,6 +521,49 @@ summary(mlr.survey3)
 `@sct`
 ```{r}
 success_msg("Excellent! You will have noted that after removing these two influential observations from a high risk industry, the variable associated with the `indcost` squared became less statistically significant. This illustrates a general phenomena; sometimes, the 'signicance' of a variable may actually due to a few unusual observations, not the entire variable.")
+```
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: NormalExercise
+key: 4db3e2d39d
+xp: 100
+```
+
+Collinearity
+
+`@instructions`
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1660902/sp/166090200/embedIframeJs/uiconf_id/25916071/partner_id/1660902?iframeembed=true&playerId=kaltura_player&entry_id=1_30hrfg77&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=1_khmh83je" width="649" height="401" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
+
+`@hint`
+In this module, you learn how to:
+
+- Define collinearity and describe its potential impact on regression inference
+- Define a variance inflation factor and describe its effect on a regression coefficients standard error
+- Describe rules of thumb for assessing collinearity and options for model reformulation in the presence of severe collinearity
+- Compare and contrast effects of leverage and collinearity
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
 ```
 
 ---
