@@ -138,9 +138,9 @@ pr=pnorm(72,mean=mchild, sd=sdchild)
 `@sct`
 ```{r}
 ex() %>% check_object("ht_child",undefined_msg="Make sure you assign the children's hight to ht_child") %>% check_equal(incorrect_msg="Remember that in order to call a specific column from a dataframe, use the $ operator")
-ex() %>% check_object("mchild")  %>% check_equal()
-ex() %>% check_object("sdchild") %>% check_equal()
-ex() %>% check_object("pr") %>% check_equal()
+ex() %>% check_object("mchild",undefined_msg="Make sure you assign the average of the children's heights to mchild")  %>% check_equal()
+ex() %>% check_object("sdchild",undefined_msg="Make sure you assign the standard deviation of the children's heights to sdchild") %>% check_equal()
+ex() %>% check_object("pr", undefine_msg="Make sure that you assign the probability of a child being less tha 72 inches to pr") %>% check_equal(incorrect_msg="Make sure to use mchild and sdchild in your calculation of pr")
 success_msg("Excellent! With this procedure, you can now calculate probabilities for any distribution using a normal curve approximation.")
 ```
 
