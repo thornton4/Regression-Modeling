@@ -294,7 +294,10 @@ plot(density(logclaims, bw = 0.03))
 `@sct`
 ```{r}
 ex() %>% check_object("logclaims") %>% check_equal(incorrect_msg = "You made an error in the definition of the logarithmic claims. Check out the definition of the log() function.")
-ex() %>% check_function("hist")
+ex() %>% check_function("hist") %>% {
+  check_arg("x") %>% check_equal(incorrect_msg="Please create a histogram of logclaims")
+  check_arg("freq") %>% check_equal(incorrect_msg="Please create a density histogram instead of a frequency histogram")
+}
 ex() %>% check_function("plot",index=1) %>% check_arg("x") %>% check_equal(incorrect_msg="Use the density function to plot the density of logclaims.")
 ex() %>% check_function("plot",index=2) %>% check_arg("x") %>% check_equal()
 success_msg("Excellent! Visualizing the distribution is important and smoothing techniques allow viewers to see important patterns without being distracted by random fluctations.")
