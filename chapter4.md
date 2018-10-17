@@ -666,19 +666,6 @@ In this module, you learn how to:
 
 ---
 
-## Selection criteria
-
-```yaml
-type: VideoExercise
-key: fbe7bc54a3
-xp: 50
-```
-
-`@projector_key`
-5ee9a1ceca54fdf811fb1ed24ed36673
-
----
-
 ## Cross-validation and term life
 
 ```yaml
