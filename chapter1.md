@@ -402,8 +402,8 @@ qqline(claims)
 
 `@sct`
 ```{r}
-ex() %>% check_function("boxplot",not_called_msg="J.D.E.M.") %>% check_arg("x",arg_not_specified_msg="J.D.E.M.") %>% check_equal(incorrect_msg="J.D.E.M.")
-ex() %>% check_function("quantile",not_called_msg="J.D.E.M.") %>% check_arg("probs",arg_not_specified_msg="J.D.E.M.") %>% check_equal(incorrect_msg="J.D.E.M.")
+ex() %>% check_function("boxplot") %>% check_arg("x") %>% check_equal(incorrect_msg="Please create a boxplot of `claims`.")
+ex() %>% check_function("quantile") %>% check_arg("probs") %>% check_equal(incorrect_msg="If we want to find the Yth percentile, make sure to set probs equal to Y in decimal format.")
 ex() %>% check_object("pr",undefined_msg="J.D.E.M.") %>% check_equal(incorrect_msg="J.D.E.M.")
 ex() %>% check_function("qqnorm",not_called_msg="J.D.E.M.") %>% check_arg("y",arg_not_specified_msg="J.D.E.M.") %>% check_equal(incorrect_msg="J.D.E.M.")
 ex() %>% check_function("qqline",not_called_msg="J.D.E.M.") %>% check_arg("y",arg_not_specified_msg="J.D.E.M.") %>% check_equal(incorrect_msg="J.D.E.M.")
