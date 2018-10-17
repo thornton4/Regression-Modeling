@@ -383,8 +383,8 @@ ___(claims)
 ___(claims, probs = ___)
 
 #Determine the 25th percentile for claims based on a normal distribution
-pr=___(p = ___, mean = mean(claims), sd = sd(claims))
-pr
+pct.25=___(p = ___, mean = mean(claims), sd = sd(claims))
+pct.25
 
 #Produce a qq plot for claims
 ___(claims)
@@ -395,7 +395,7 @@ ___(claims)
 ```{r}
 boxplot(claims)
 quantile(claims, probs = 0.25)
-pr=qnorm(p = 0.25, mean = mean(claims), sd = sd(claims))
+pct.25=qnorm(p = 0.25, mean = mean(claims), sd = sd(claims))
 qqnorm(claims)
 qqline(claims)
 ```
@@ -404,7 +404,7 @@ qqline(claims)
 ```{r}
 ex() %>% check_function("boxplot") %>% check_arg("x") %>% check_equal(incorrect_msg="Please create a boxplot of `claims`.")
 ex() %>% check_function("quantile") %>% check_arg("probs") %>% check_equal(incorrect_msg="If we want to find the Yth percentile, make sure to set probs equal to Y in decimal format.")
-ex() %>% check_object("pr",undefined_msg="J.D.E.M.") %>% check_equal(incorrect_msg="J.D.E.M.")
+ex() %>% check_object("pct.25",undefined_msg="Make sure to assign the normal value associated with the 25th percentile to pct.25") %>% check_equal(incorrect_msg="J.D.E.M.")
 ex() %>% check_function("qqnorm",not_called_msg="J.D.E.M.") %>% check_arg("y",arg_not_specified_msg="J.D.E.M.") %>% check_equal(incorrect_msg="J.D.E.M.")
 ex() %>% check_function("qqline",not_called_msg="J.D.E.M.") %>% check_arg("y",arg_not_specified_msg="J.D.E.M.") %>% check_equal(incorrect_msg="J.D.E.M.")
 success_msg("Congratulations on learning about box and qq plots. Although you are unlikely to show these plots to consumers of your analysis, you will find them useful tools as we explore multivariate aspects of data.")
