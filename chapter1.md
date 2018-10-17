@@ -197,7 +197,7 @@ pr=pnorm(72, mean = mchild , sd = sdchild,lower.tail=FALSE)
 ```{r}
 ex() %>% check_function("hist",not_called_msg="Use the hist command to create a histogram of the children's heights.") %>% check_arg("x") %>% check_equal(incorrect_msg="Make sure to create a histogram of the children's heights.")
 ex() %>% check_function("lines",not_called_msg="Please use the lines function to overlay a normal curve on your histogram")
-ex() %>% check_object("pr") %>% check_equal()
+ex() %>% check_object("pr", undefined_msg="Make sure to assign the probability of a child's height being greater than 72 inches to pr.") %>% check_equal(incorrect_msg="Make sure to find the probability of a child's height being GREATER than 72 inches.")
 success_msg("Excellent! Visualizing the distribution, especially with reference to a normal, is important for communicating results of your analysis.")
 ```
 
