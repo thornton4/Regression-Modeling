@@ -470,7 +470,7 @@ hist(injury2$claims, freq = FALSE,  main = "Largest Claim Omitted")
 
 `@sct`
 ```{r}
-ex() %>% check_function("tail") %>% check_arg("x") %>% check_equal()
+ex() %>% check_function("tail") %>% check_arg("x") %>% check_equal(incorrect_msg="Make sure to use tail to see the las 6 entries in `injury`.")
 ex() %>% check_object("injury2") %>% check_equal()
 ex() %>% check_function("subset")
 ex() %>% check_function("summary") %>% check_arg("object") %>% check_equal()
