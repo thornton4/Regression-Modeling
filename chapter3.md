@@ -278,13 +278,44 @@ success_msg("Congratulations! When both $x_1$ and $y$ are in logarithmic units, 
 ## Statistical inference and multiple linear regression
 
 ```yaml
-type: VideoExercise
-key: cfa3072c7c
-xp: 50
+type: NormalExercise
+key: 656a2a952c
+xp: 100
 ```
 
-`@projector_key`
-c77074330c0754662a1dbb56fbca3e43
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1660902/sp/166090200/embedIframeJs/uiconf_id/25916071/partner_id/1660902?iframeembed=true&playerId=kaltura_player&entry_id=0_n9542z90&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_1rrbi7qd" width="649" height="401" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
+
+`@instructions`
+In this module, you learn how to:
+  
+-  Explain mean square error and residual standard error in terms of degrees of freedom
+-  Develop an ANOVA table and use it to derive the coefficient of determination
+-  Calculate and interpret the coefficient of determination adjusted for degrees of freedom
+-  Conduct a test of a regression coefficient
+-  Summarize regression coefficients using point and interval estimators
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
+```
 
 ---
 
