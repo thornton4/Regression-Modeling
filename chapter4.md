@@ -6,13 +6,40 @@ description: 'This chapter describes tools and techniques to help you select var
 ## An iterative approach to data analysis and modeling
 
 ```yaml
-type: VideoExercise
-key: 9da28ad7dd
-xp: 50
+type: NormalExercise
+key: 9894fa8482
+xp: 100
 ```
 
-`@projector_key`
-9362f318b5a48b39912dd30a85aa2f41
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1660902/sp/166090200/embedIframeJs/uiconf_id/25916071/partner_id/1660902?iframeembed=true&playerId=kaltura_player&entry_id=1_53yv68dd&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_yxfgvaql" width="649" height="401" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
+
+`@instructions`
+In this module, you learn how to:
+  
+-  Describe the iterative approach to data analysis and modeling.
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
+```
 
 ---
 

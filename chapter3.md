@@ -634,19 +634,6 @@ In this module, you learn how to:
 
 ---
 
-## Hypothesis testing
-
-```yaml
-type: VideoExercise
-key: 156ef40aaf
-xp: 50
-```
-
-`@projector_key`
-df2187184761fab4d774149af7725157
-
----
-
 ## Hypothesis testing and term life
 
 ```yaml
