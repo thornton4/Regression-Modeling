@@ -586,7 +586,7 @@ plot(density(-claims^(-1)))
 ex() %>% check_function("par") %>% check_arg("mfrow") %>% check_equal("Please do not change this part of the code. It should read `par(mfrow=c(2,2))`")
 ex() %>% check_function("plot",index=1,not_called_msg="Did you plot the density of claims?") %>% check_arg("x") %>% check_equal(incorrect_msg="Make sure to create the first histogram using `claims`")
 ex() %>% check_function("plot",index=2,not_called_msg="Did you plot the density of the square root of claims?") %>% check_arg("x") %>% check_equal(incorrect_msg="Make sure to create the second histogram based on the square root of `claims`.")
-ex() %>% check_function("plot",index=3,not_called_msg="Did you plot the density of logarithmic claims?") %>% check_arg("x") %>% check_equal()
+ex() %>% check_function("plot",index=3,not_called_msg="Did you plot the density of logarithmic claims?") %>% check_arg("x") %>% check_equal(incorrect_msg="Make sure to create the third histogram based on the natural log of `claims`.")
 ex() %>% check_function("plot",index=4,not_called_msg="Did you plot the density of the negative reciprocal of claims?") %>% check_arg("x") %>% check_equal()
 success_msg("Excellent! Transformations of data is a tool that incredibly expands potential applicability of (linear) regression techniques.")
 ```
