@@ -525,7 +525,7 @@ success_msg("Excellent! You will have noted that after removing these two influe
 
 ---
 
-## Insert exercise title here
+## Collinearity
 
 ```yaml
 type: NormalExercise
@@ -565,19 +565,6 @@ In this module, you learn how to:
 ```{r}
 
 ```
-
----
-
-## Collinearity
-
-```yaml
-type: VideoExercise
-key: 1e651c4018
-xp: 50
-```
-
-`@projector_key`
-3f319d9bce5db7f2d39df9e2e14f3c46
 
 ---
 
@@ -634,6 +621,47 @@ summary(Term_mlr1)
 `@sct`
 ```{r}
 success_msg("Excellent! This exercise underscores that approximately colinearity among explanatory variables can be induced when introducing higher order terms such as interactions. Note that in the interation model the variable 'numhh' does not appear to be statistically effect. This is one of the big dangers of collinearity - it can mask important effects.")
+```
+
+---
+
+## Selection criteria
+
+```yaml
+type: NormalExercise
+key: 2e5e0fe30e
+xp: 100
+```
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1660902/sp/166090200/embedIframeJs/uiconf_id/25916071/partner_id/1660902?iframeembed=true&playerId=kaltura_player&entry_id=0_i5dlmsna&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_kvkokgm2" width="649" height="401" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
+
+`@instructions`
+In this module, you learn how to:
+
+- Summarize a regression fit using alternative goodness of fit measures
+- Validate a model using in-sample and out-of-sample data to mitigate issues of data-snooping
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
 ```
 
 ---
