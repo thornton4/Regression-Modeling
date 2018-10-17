@@ -299,7 +299,7 @@ ex() %>% check_function("hist",not_called_msg="Make sure to use `hist` to create
   check_arg(., "freq") %>% check_equal(incorrect_msg="Please create a density histogram instead of a frequency histogram.")
 }
 ex() %>% check_function("plot",index=1) %>% check_arg("x") %>% check_equal(incorrect_msg="Use the density function to plot the density of logclaims.")
-ex() %>% check_function("plot",index=2) %>% check_arg("x") %>% check_equal()
+ex() %>% check_function("plot",index=2,not_called_msg="Create another plot using `plot` that displays the density of logarithmic claims with a binwidtch of 0.03.") %>% check_arg("x") %>% check_equal()
 success_msg("Excellent! Visualizing the distribution is important and smoothing techniques allow viewers to see important patterns without being distracted by random fluctations.")
 ```
 
