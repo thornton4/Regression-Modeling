@@ -474,6 +474,7 @@ ex() %>% check_function("tail") %>% check_arg("x") %>% check_equal(incorrect_msg
 ex() %>% check_object("injury2") %>% check_equal(incorrect_msg="Make sure that `injury2` is the same as `injury` but without the largest claim. Try and think of creative ways to remove that observation from the data!")
 ex() %>% check_function("subset")
 ex() %>% check_function("summary") %>% check_arg("object") %>% check_equal(incorrect_msg="Make sure to get summary statistics of `injury2`.")
+ex() %>% check_function("sd") %>% check_result() %>% check_equal(incorrect_msg="Make sure that you have found the standard deviation of `claims` in the dataframe `injury2`.")
 ex() %>% check_function("par") %>% check_arg("mfrow") %>% check_equal()
 ex() %>% check_function("hist",index=1) %>% check_arg("x") %>% check_equal()
 ex() %>% check_function("hist",index=2) %>% check_arg("x") %>% check_equal()
