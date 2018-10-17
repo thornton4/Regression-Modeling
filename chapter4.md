@@ -116,19 +116,6 @@ In this module, you learn how to:
 
 ---
 
-## Automatic variable selection procedures
-
-```yaml
-type: VideoExercise
-key: 8c0358d3d9
-xp: 50
-```
-
-`@projector_key`
-fd8d5708669990bf0b1da87eaf4e45cc
-
----
-
 ## Data-snooping in stepwise regression
 
 ```yaml
@@ -223,6 +210,47 @@ summary(modelStep5)
 `@sct`
 ```{r}
 success_msg("Excellent! The step procedure repeatedly fits many models to a data set. We summarize each fit with hypothesis testing statistics like t-statistics and p-values. But, remember that hypothesis tests are designed to falsely detect a relationship a fraction of the time (typically 5%). For example, if you run a t-test 50 times (for each explanatory variable), you can expect to get two or three statistically significant explanatory variables even for unrelated variables (because 50 times 0.05 = 2.5).")
+```
+
+---
+
+## Residual analysis
+
+```yaml
+type: NormalExercise
+key: e6c89b8e9c
+xp: 100
+```
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1660902/sp/166090200/embedIframeJs/uiconf_id/25916071/partner_id/1660902?iframeembed=true&playerId=kaltura_player&entry_id=1_bwhmsm8k&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_zvacn361" width="649" height="401" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
+
+`@instructions`
+In this module, you learn how to:
+
+- Explain how residual analysis can be used to improve a model specification
+- Use relationships between residuals and potential explanatory variables to improve model specification
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
 ```
 
 ---
