@@ -587,7 +587,7 @@ ex() %>% check_function("par") %>% check_arg("mfrow") %>% check_equal("Please do
 ex() %>% check_function("plot",index=1,not_called_msg="Did you plot the density of claims?") %>% check_arg("x") %>% check_equal(incorrect_msg="Make sure to create the first histogram using `claims`")
 ex() %>% check_or(
 check_function(.,"plot") %>% check_arg(., "x") %>% check_equal(),
-  override_solution(.,"plot(density(sqrt(claims)))") %>% check_function(plot) %>% check_arg(., "x") %>% check_equal()
+  override_solution(.,"plot(density(sqrt(claims)))") %>% check_function("plot") %>% check_arg(., "x") %>% check_equal()
 )
 
 
