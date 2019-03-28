@@ -1,6 +1,7 @@
 ---
 title: 'Chapter 1. Regression and the Normal Distribution'
 description: 'Regression analysis is a statistical method that is widely used in many fields of study, with actuarial science being no exception. This chapter introduces the role of the normal distribution in regression and the use of logarithmic transformations in specifying regression relationships.'
+free_preview: true
 ---
 
 ## Course Introduction
